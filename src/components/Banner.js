@@ -89,5 +89,25 @@ const InfoButton = styled.button`
     background: rgba(109,109,110,0.9);
   }
 `;
+@media (max-width: 768px) {
+  height: 60vh;
+  padding: 20px;
+
+  h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+  button {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+
 
 export default Banner;
