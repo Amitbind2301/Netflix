@@ -41,6 +41,21 @@ const Home = () => {
 const HomeContainer = styled.div`
   background: linear-gradient(to bottom, #000, #111);
   min-height: 100vh;
+  overflow-x: hidden;
+
+  /* Desktop */
+  padding-top: 70px;
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    padding-top: 65px;
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    padding-top: 60px;
+  }
 `;
+
 
 export default Home;
