@@ -39,7 +39,7 @@ const Home = () => {
 };
 
 const HomeContainer = styled.div`
-  background: linear-gradient(to bottom, #000, #111);
+  background: linear-gradient(180deg, #000 0%, #0b0b0b 60%, #111 100%);
   min-height: 100vh;
   overflow-x: hidden;
 
@@ -48,14 +48,37 @@ const HomeContainer = styled.div`
 
   /* Tablet */
   @media (max-width: 1024px) {
-    padding-top: 65px;
+    padding-top: 64px;
   }
 
   /* Mobile */
   @media (max-width: 768px) {
-    padding-top: 60px;
+    padding-top: 58px;
+  }
+
+  /* Section spacing for all Rows */
+  & > section,
+  & > div {
+    margin-bottom: 32px;
+  }
+
+  /* Tablet spacing */
+  @media (max-width: 1024px) {
+    & > section,
+    & > div {
+      margin-bottom: 26px;
+    }
+  }
+
+  /* Mobile spacing */
+  @media (max-width: 768px) {
+    & > section,
+    & > div {
+      margin-bottom: 20px;
+    }
   }
 `;
+
 
 
 export default Home;
