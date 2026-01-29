@@ -84,17 +84,63 @@ const DetailsContainer = styled.div`
 const MovieWrapper = styled.div`
   display: flex;
   padding: 20px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    padding: 16px;
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 const Poster = styled.img`
   width: 300px;
   height: 450px;
   object-fit: cover;
+  border-radius: 8px;
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    width: 260px;
+    height: 390px;
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    width: 220px;
+    height: 330px;
+  }
 `;
 
 const Info = styled.div`
-  margin-left: 20px;
   flex: 1;
+
+  h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
+
+  p {
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    margin-top: 20px;
+
+    h1 {
+      font-size: 24px;
+    }
+  }
 `;
 
 const Button = styled.button`
@@ -102,15 +148,35 @@ const Button = styled.button`
   border: none;
   padding: 10px 18px;
   color: white;
-  margin-top: 10px;
+  margin-top: 12px;
   cursor: pointer;
-  &:hover { background: #f40612; }
+  border-radius: 4px;
+  font-size: 14px;
+
+  &:hover {
+    background: #f40612;
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const WatchButton = styled(Button)`
   margin-left: 10px;
   background: #1f80e0;
-  &:hover { background: #2c9dff; }
+
+  &:hover {
+    background: #2c9dff;
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 `;
+
 
 export default MovieDetails;
