@@ -1,4 +1,4 @@
-/*import React, { useState } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -84,10 +84,10 @@ const SearchButton = styled.button`
   cursor: pointer;
 `;
 
-export default Nav;  */
+export default Nav;  
 
 
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -184,4 +184,4 @@ const SearchButton = styled.button`
   cursor: pointer;
 `;
 
-export default Nav;
+export default Nav;*/
